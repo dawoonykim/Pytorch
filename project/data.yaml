@@ -1,0 +1,12 @@
+train: C:/Users/dawoo/desktop/sf7/coding/pytorch/project/train/images
+val: C:/Users/dawoo/desktop/sf7/coding/pytorch/project/valid/images
+nc: 6
+names:
+- bumper_ok
+- bumper_faulty
+- door_ok
+- door_faulty
+- fender_ok
+- fender_faulty
+- frame_ok
+- frame_faulty
