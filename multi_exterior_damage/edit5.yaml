@@ -1,0 +1,42 @@
+train: C:/Users/dawoo/Desktop/sf7/coding/pytorch/multi_exterior_damage/train/images
+val: C:/Users/dawoo/Desktop/sf7/coding/pytorch/multi_exterior_damage/valid/images
+test: C:/Users/dawoo/Desktop/sf7/coding/pytorch/multi_exterior_damage/test/images
+nc: 6
+names:
+- ok
+- ok
+- ok
+- fault
+- fault
+- fault
+class_weights:
+  0: 1.33
+  1: 1.33
+  2: 1.33
+  3: 2.0
+  4: 3.33
+  5: 5.0
+augment:
+  flipud: 0.5
+  fliplr: 0.5
+  translate: 0.2
+  brightness: 0.3
+  contrast: 0.3
+  shear: 10
+  perspective: 0.2
+  horizontal_flip: 0.5
+  vertical_flip: 0.5
+  crop: 0.4
+  sharpen: 0.3
+  grayscale: 0.5
+  rotate:
+  - 5
+  - 30
+  scale:
+  - 0.8
+  - 1.2
+  hsv_h: 0.015
+  hsv_s: 0.7
+  hsv_v: 0.4
+  random_perspective: 0.3
+  mosaic: 1.0
