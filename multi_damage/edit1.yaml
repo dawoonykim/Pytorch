@@ -1,0 +1,31 @@
+train: C:/Users/dawoo/Desktop/sf7/coding/pytorch/multi_damage//train/images
+val: C:/Users/dawoo/Desktop/sf7/coding/pytorch/multi_damage/valid/images
+test: C:/Users/dawoo/Desktop/sf7/coding/pytorch/multi_damage/test/images
+nc: 6
+names:
+- ok
+- fault_1
+- fault_2
+- fault_3
+- fault_4
+- fault_5
+class_weights:
+  0: 1.33
+  1: 2.5
+  2: 2.86
+  3: 2.0
+  4: 3.33
+  5: 5.0
+augment:
+  mosaic: 0.35
+  random_shadow: 0.3
+  brightness: 0.35
+  contrast: 0.45
+  sharpen: 0.35
+  gauss_noise: 0.3
+  hsv_h: 0.4
+  hsv_s: 0.4
+  hsv_v: 0.4
+  grayscale: 0.3
+  flip: 0.5
+  rotate: 0.4
