@@ -1,12 +1,29 @@
 train: C:/Users/dawoo/desktop/sf7/coding/pytorch/project/train/images
+test: C:/Users/dawoo/desktop/sf7/coding/pytorch/project/test/images
 val: C:/Users/dawoo/desktop/sf7/coding/pytorch/project/valid/images
-nc: 6
+nc: 2
 names:
-- bumper_ok
-- bumper_faulty
-- door_ok
-- door_faulty
-- fender_ok
-- fender_faulty
-- frame_ok
-- frame_faulty
+- ok
+- faulty
+augment:
+  flipud: 0.5
+  fliplr: 0.5
+  rotate: 10
+  mosaic: 0.5
+  translate: 0.3
+  scale: 0.8
+  random_shadow: 0.5
+  random_fog: 0.4
+  crop: 0.4
+  brightness: 0.5
+  contrast: 0.5
+  sharpen: 0.5
+  mixup: 0.2
+  cutmix: 0.1
+  motion_blur: 0.3
+  gauss_noise: 0.3
+  hsv_h: 0.02
+  hsv_s: 0.8
+  hsv_v: 0.6
+  shear: 30
+  perspective: 0.3

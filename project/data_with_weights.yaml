@@ -1,0 +1,38 @@
+train: C:/Users/dawoo/Desktop/sf7/coding/pytorch/project/train/images
+val: C:/Users/dawoo/Desktop/sf7/coding/pytorch/project/valid/images
+test: C:/Users/dawoo/Desktop/sf7/coding/pytorch/project/test/images
+nc: 5
+names:
+- bumper_fault
+- door_scratch_fault
+- door_ed_fault
+- fender_fault
+- frame_fault
+class_weights:
+  0: 2.5
+  1: 2.86
+  2: 2.0
+  3: 3.33
+  4: 4.0
+augment:
+  flipud: 0.2
+  fliplr: 0.3
+  rotate: 10
+  mosaic: 0.5
+  translate: 0.3
+  scale: 0.6
+  random_shadow: 0.4
+  random_fog: 0.2
+  crop: 0.4
+  brightness: 0.5
+  contrast: 0.5
+  sharpen: 0.2
+  mixup: 0.3
+  cutmix: 0.2
+  motion_blur: 0.3
+  gauss_noise: 0.3
+  hsv_h: 0.02
+  hsv_s: 0.8
+  hsv_v: 0.5
+  shear: 15
+  perspective: 0.2
