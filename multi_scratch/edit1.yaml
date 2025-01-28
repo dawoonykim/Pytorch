@@ -1,0 +1,24 @@
+train: C:/Users/dawoo/Desktop/sf7/coding/pytorch/multi_scratch//train/images
+val: C:/Users/dawoo/Desktop/sf7/coding/pytorch/multi_scratch/valid/images
+test: C:/Users/dawoo/Desktop/sf7/coding/pytorch/multi_scratch/test/images
+nc: 3
+names:
+- ok
+- fault_1
+- fault_2
+class_weights:
+  0: 1.43
+  1: 2.5
+  2: 2.86
+augment:
+  mosaic: 0.3
+  random_shadow: 0.25
+  random_fog: 0.2
+  brightness: 0.3
+  contrast: 0.4
+  sharpen: 0.3
+  motion_blur: 0.25
+  gauss_noise: 0.25
+  hsv_h: 0.3
+  hsv_s: 0.3
+  hsv_v: 0.3
